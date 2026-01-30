@@ -1,40 +1,48 @@
+/* impacts everything in the body element */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* impact both paragraphs */
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
+ /* impacts the small paragraph class specifically */
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
+/* impacts both paragraph classes */
 .para {
   font-size: 22px;
 }
 
-.confirm {
+/* impacts only the confirm button */
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
 } 
 
+/* impact confirm and cancel button */
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+/* impacts only the last line */
+div.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
 
+/* impacts all of the last three lines */
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
